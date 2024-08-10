@@ -1,0 +1,87 @@
+.budget-tracker {
+    border-collapse: collapse;
+    min-width: 750px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.budget-tracker * {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.budget-tracker th {
+    text-align: left;
+    padding: 15px 20px;
+    background-color: #009578;
+    color: #ffffff;
+    border-bottom: 3px solid #007f63;
+}
+
+.budget-tracker td {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.budget-tracker tr:last-child td {
+    border-bottom: none;
+}
+
+.input,
+.delete-entry {
+    height: 35px;
+    font-size: 14px;
+    padding: 0 12px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: #ffffff;
+}
+
+.input:focus {
+    border-color: #009578;
+    box-shadow: 0 0 5px rgba(0, 149, 120, 0.2);
+}
+
+.delete-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: none;
+    color: #ff4c4c;
+    border: 2px solid #ff4c4c;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.delete-entry:hover {
+    background: #ff4c4c;
+    color: #ffffff;
+}
+
+.controls,
+.summary {
+    text-align: right;
+    padding: 15px 20px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    border-top: 2px solid #e0e0e0;
+}
+
+.summary {
+    font-size: 18px;
+}
